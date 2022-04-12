@@ -36,7 +36,6 @@
 
 
 <script>
-
 export default {
   name: "Footer",
   data() {
@@ -58,7 +57,7 @@ export default {
 
 .Footer-center {
   width: 100%;
-  height: 200px;
+  height: 150px;
 
   padding: 0px 0px 40px;
   margin-top: 50px;
