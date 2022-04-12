@@ -2,12 +2,14 @@
   <header>
     <div class="content">
       <nav>
-        <a class="logo"><strong>Projeto</strong>Vue.js</a>
+        <div class="logo"><ButtonSidebar /></div>
 
-        <a href="">Catalog</a>
-        <a href="">About</a>
-        <a href="">Features</a>
-        <button>Login</button>
+        <div>
+          <a href="">Catalog</a>
+          <a href="">About</a>
+          <a href="">Features</a>
+          <button>Login</button>
+        </div>
       </nav>
 
       <HeaderBlock />
@@ -16,12 +18,14 @@
 </template>
 
 <script>
+import ButtonSidebar from "../Sidebar/ButtonSidebar.vue";
 import HeaderBlock from "./HeaderBlock";
 
 export default {
   name: "Header",
   components: {
     HeaderBlock,
+    ButtonSidebar,
   },
 };
 </script>
@@ -72,15 +76,18 @@ header {
 nav {
   padding: 50px 0px;
 
-  text-align: right;
+  display: flex;
 
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--orange);
 }
 
-nav a.logo {
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: 22px;
-  margin-right: 41%;
 }
 
 nav a {
@@ -100,7 +107,6 @@ nav a:hover {
 
 nav button {
   padding: 10px 35px;
-  margin-left: 2%;
 
   font-size: 16px;
   color: var(--blue);
