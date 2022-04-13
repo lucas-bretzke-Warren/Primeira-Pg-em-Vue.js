@@ -2,6 +2,8 @@
   <div class="center">
     <div class="FaixaDeCarros">
       <ModeloDeCarro />
+      <ModeloDeCarro />
+      <ModeloDeCarro />
     </div>
   </div>
 </template>

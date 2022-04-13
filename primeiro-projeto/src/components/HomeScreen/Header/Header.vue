@@ -2,7 +2,7 @@
   <header>
     <div class="content">
       <nav>
-        <div class="logo"><ButtonSidebar /></div>
+        <div class="logo"><ButtonSidebar :mostrar_Nav="showNav" /></div>
 
         <div>
           <a href="">Catalog</a>
@@ -27,6 +27,9 @@ export default {
     HeaderBlock,
     ButtonSidebar,
   },
+  computeed: {
+    showNav = false
+  }
 };
 </script>
 
