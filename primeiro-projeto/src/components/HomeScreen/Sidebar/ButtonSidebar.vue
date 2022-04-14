@@ -25,6 +25,9 @@ export default {
       showNav() {
           this.mostrar_Nav = !this.mostrar_Nav;
       }
+  },
+  props: {
+    showNav: Boolean
   }
 };
 </script>
